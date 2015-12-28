@@ -1,0 +1,81 @@
+<resources>
+    <!--strings for the main select fragment to make sure we avoid empty spaces if no values in grid view-->
+    <string name="no_network_connection">We can\'t find new people for you. Please make sure you are online. You
+    might not be connected.</string>
+    <string name="no_people_around">No people near by. Try again later.</string>
+
+    <!--put your own facebook Id here this is just for not breaking the code-->
+    <string name="facebook_app_id">123244555</string>
+    <string name="step_our_fiend_zone">Step out of the friend zone</string>
+    <string name="pegacao">Matcher</string>
+    <string name="never_publish_in_facebook">We will never publish on your Facebook</string>
+    <string name="login_logo_description_accesibility">Matcher brand logo</string>
+    <string name="logout">Logout</string>
+
+    <!--Login Activity view pager string content-->
+    <string name="hit_your_crush">Hit on your crush secretly and discover others</string>
+    <string name="meet_people_world">Meet people from around the world</string>
+    <string name="chat_your_match">Chat with your match inside the application</string>
+    <string name="get_notified_nearby">Get notified if your crush is nearby</string>
+
+    <!--shared preference if people have open the first time and logged out-->
+    <string name="app_state_values">AppStateValues</string>
+    <string name="is_first_time">isFirstTime</string>
+
+    <!--Dialog messages when user cancels the login process-->
+    <string name="login_cancelled_title">Login Was Cancelled</string>
+    <string name="login_cancelled_message">You need to log in with Facebook in order to use this app.</string>
+    <string name="button_ok">OK</string>
+
+    <!--Facebook Login dialog messages when an error or cancelation occurs-->
+    <string name="dialog_error_title">Something Went Wrong</string>
+    <string name="dialog_error_message">"Please try again later: "</string>
+
+    <!--Strings for Drawer menu items-->
+    <string name="about">About</string>
+    <string name="preference">Preference</string>
+    <string name="settings">Settings</string>
+
+    <!-- Key name for storing people server status in SharedPreferences -->
+    <string name="pref_people_server_status_key" translatable="false">people-server-status</string>
+
+    <!--empty screen people server errors-->
+    <string name="empty_grid_list">Seems we can\'t get any available information</string>
+    <string name="empty_grid_list_no_network">Nobody found at the moment. The network is not available to search new matches.</string>
+    <string name="empty_grid_list_server_down">Nobody found at the moment. Bad connection with the network.</string>
+    <string name="empty_grid_list_server_error">Nobody found at the moment. No valid matches found. Please check for an updated version of Pegacao.</string>
+
+    <!--Dialog view messages and titles in Login Activity -->
+    <string name="permission_denied">Permission Denied</string>
+    <string name="email_denied">\nEmail: We need your email to send you the latest info</string>
+    <string name="try_again">Try Again</string>
+    <string name="cancel">Cancel</string>
+    <string name="pref_name">pref_profile_name</string>
+    <string name="pref_id">pref_profile_id</string>
+    <string name="pref_firstname">pref_profile_firstname</string>
+    <string name="pref_email">pref_profile_email</string>
+    <string name="pref_agerangemin">pref_profile_agerangemin</string>
+    <string name="pref_birthday">pref_profile_birthday</string>
+    <string name="pref_gender">pref_profile_gender</string>
+    <string name="pref_urlStr">pref_profile_urlStr</string>
+    <string name="pref_verified">pref_profile_verified</string>
+    <string name="pref_profile_values">pref_profile_values</string>
+    <string name="drawer_image_view">drawerImageView</string>
+    <string name="picture_person">Picture of a person</string>
+    <string name="photo_icon_counter">Photo icon counter</string>
+    <string name="chat">Chat</string>
+    <string name="kissed">Kissed!</string>
+    <string name="app_title">app title</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- PersonDetailActivity format strings -->
+    <string name="name_and_age_detail">%1$s, %2$s</string>
+    <string name="last_time">Active %1$s %2$s ago</string>
+    <string name="distance">About %1$s km away</string>
+    <string name="report">Report</string>
+    <string name="block">Block</string>
+    <string name="not_interested">Not Interested</string>
+
+</resources>

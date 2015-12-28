@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/linear_pictures_holder"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical">
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/circle_indicator_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            app:ci_drawable="@drawable/white_radius"
+            app:ci_drawable_unselected="@drawable/selected_radius"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="350dp"
+        android:background="@color/colorPrimary"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_name_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            tools:text="Barbara, 30"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/txt_time_ago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white"
+            tools:text="Active 12 minutes ago"/>
+        <TextView
+            android:id="@+id/txt_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white"
+            tools:text="About 1 km away"/>
+        <TextView
+            android:id="@+id/txt_profile_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white"
+            tools:text="Some long profile message can go here maybe a full paragraph. Try to see later"/>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_lips"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_anchor="@id/linear_pictures_holder"
+        app:layout_anchorGravity="top|right|end"
+        android:src="@drawable/app_logo"
+        app:backgroundTint="@android:color/white"
+        android:scaleType="centerInside"
+        android:layout_marginTop="280dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:clickable="true"/>
+
+    <!--android:src="@drawable/cross_out_button_56x56"-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_x"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_anchor="@id/linear_pictures_holder"
+        app:layout_anchorGravity="top|right|end"
+        android:src="@drawable/ic_x_24dp"
+        app:backgroundTint="@android:color/darker_gray"
+        android:tint="@android:color/white"
+        android:scaleType="center"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:clickable="true"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/DetailToolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@android:color/transparent"/>
+
+</android.support.design.widget.CoordinatorLayout>
