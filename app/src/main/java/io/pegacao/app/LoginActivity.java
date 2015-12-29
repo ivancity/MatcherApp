@@ -392,13 +392,13 @@ public class LoginActivity extends AppCompatActivity
     public void fbMeRequest(LoginResult loginResult){
         /*
         GraphResponse ex:
- SERVER RESPONSE: {Response:  responseCode: 200, graphObject: {"id":"10156191458805464","birthday":"01\/01\/1987","first_name":"Ivan","email":"vagabundo.ivan@gmail.com","verified":true,"name":"Ivan Morris","gender":"male","age_range":{"min":21}}, error: null}
-object response: {"id":"10156191458805464","birthday":"01\/01\/1987","first_name":"Ivan","email":"vagabundo.ivan@gmail.com","verified":true,"name":"Ivan Morris","gender":"male","age_range":{"min":21}}
-profile_pic: http://graph.facebook.com/10156191458805464/picture?type=large */
+ SERVER RESPONSE: {Response:  responseCode: 200, graphObject: {"id":"12343234","birthday":"01\/01\/1987","first_name":"xxxx","email":"xxx.xxx@gmail.com","verified":true,"name":"xxxx xxxxx","gender":"male","age_range":{"min":21}}, error: null}
+object response: {"id":"123124","birthday":"01\/01\/1987","first_name":"xxx","email":"xxx.xxx@gmail.com","verified":true,"name":"xx xxx","gender":"male","age_range":{"min":21}}
+profile_pic: http://graph.facebook.com/1234323/picture?type=large */
 
 //https://graph.facebook.com/me/?access_token=[accessToken]
 //https://graph.facebook.com/me?fields=email,first_name,[anotherField]&access_token=[accessToken]
-//http://graph.facebook.com/10156191458805464/picture?type=large
+//http://graph.facebook.com/12343234/picture?type=large
 
 
         GraphRequest request = GraphRequest.newMeRequest(
